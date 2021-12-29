@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: burlywood;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.toggle{
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    line-height: 45px;
+    margin-left: 5%;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    background-color: #E1DCCC;
+    height: 700px;
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 100px;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+ul li {
+    margin-right: 15px;
+    padding-left: 5px;
+    position: relative;
+    
+}
+ul li a
+{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 45px;
+    color: red;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+ul li:first-child
+{
+    background-color: white;
+    color: red;
+    border-radius: 50px;
+}
+ul li a:hover
+{
+    background-color: white;
+    color: red;
+    border-radius: 25px;
+    
+}
+.firstDiv
+{
+background-color: black;
+width: 100%;
+height: 50vh;
+}
+.secondDiv
+{
+    margin-top: -695px;
+    margin-left: 105px;
+}
+.secondDiv h3 a
+{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 45px;
+    color: red;
+    text-decoration: none;
+    margin-top: 0;
+    margin-left: 5px;
+    border: 5px solid ;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    
+}
+.thirdDiv
+{
+    text-align: center;
+    margin-top: 250px;
+}
+.para
+{
+    width: 650px;
+    margin-left: 350px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.thirdDiv h3
+{
+    margin-top: 25px;
+}
+.thirdDiv p 
+{
+    text-align: center;
+    
+}
+.sec
+{
+   margin-top: -150px;
+}
+.counter-up
+{
+    margin-top: 50px;
+    /* background-color: blue; */
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+.counter-up .content
+{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .box
+{
+    width: calc(25% - 30px);
+    border: 1px dashed #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    color: black;
+    flex-direction: column;
+    border-radius:5px ;
+}
+.content .box .counter
+{
+    font-size: 50px;
+    color:black;
+    font-weight: bold;
+}
+.content .box .text
+{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container
+{
+    margin-top: -80px;
+}
+.container h3
+{
+    color: red;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: bold;
+}
+.container p
+{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.container-brodcast
+{
+    width: 95%;
+    
+}
+.container-brodcast h3
+{
+    color: red;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: bold;
+    
+}
+.container-brodcast p
+{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    
+}
+.social
+{
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.row a
+{
+    color: black;
+    
+}
+@media (max-width:1036px)
+{
+    .counter-up
+    {
+        padding: 50px 50px 0 50px;
+        
+    }
+    .content .box
+    {
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:580px)
+{
+    
+    .content .box
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width:900px)
+{
+    .toggle{
+        display: block;
+     
+    }
+    ul{
+        position: fixed;
+        top: -400px;
+        /* z-index: -1; */
+        margin-top: -15px;
+        right: 0;
+        left: 0;
+        width: 100vh;
+        display: inline-block;
+        transition: top .4s;
+        margin-top: 0;
+        background-color: white;
+        text-align: center;
+        
+        
+    }
+    ul li a 
+    {
+        font-size: 20px;
+    }
+    ul.show{
+        top: 60px;
+    }
+    ul li {
+        top:0;
+        width: 100%;
+    }
+    .secondDiv h3 a
+{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: red;
+    text-decoration: none;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 5px solid ;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 5px;
+    
+}
+nav{
+    background-color:  #E1DCCC;
+    height: 45px;
+    width: 97%;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.thirdDiv
+{
+    text-align: center;
+    margin-top: 680px;
+    margin-left: 10px;
+    background-color:  #E1DCCC;
+    width: 97%;
+    padding: 100px;
+   
+   
+}
+.thirdDiv p
+{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 16px;
+}
+.para
+{
+    
+    width: 350px;
+    margin-left: -25px;
+    margin-top: 20px;
+    text-align: center;
+}
+.thirdDiv h3
+{
+    
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.container
+{
+    margin-top: -200px;
+}
+.container h3
+{
+    color: red;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.container p
+{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 16px;
+}
+.container-brodcast
+{
+    margin-top: 20px;
+}
+.container-brodcast h3
+{
+    color: red;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-brodcast p
+{
+    margin-top: 20px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 16px;
+}
+}
